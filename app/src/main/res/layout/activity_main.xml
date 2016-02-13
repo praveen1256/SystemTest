@@ -1,0 +1,167 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivityFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="15dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:background="@drawable/smile"
+                android:id="@+id/imageview_friendphoto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/relative_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/transperent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textview_friendname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textview_abt_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_friendname"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="15dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imageview_partyimage"
+                android:background="@drawable/smile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/relative_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/transperent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textview_atparty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="15dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imageview_weddingimage"
+                android:layout_width="fill_parent"
+                android:background="@drawable/smile"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transperent"
+                android:layout_gravity="bottom"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textview_whenwemeet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="15dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imageview_checkin"
+                android:layout_width="fill_parent"
+                android:background="@drawable/smile"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/relative_four"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/transperent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textview_checkin_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
